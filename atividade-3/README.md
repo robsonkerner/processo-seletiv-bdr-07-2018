@@ -14,7 +14,7 @@ class MyUserClass
 ```
 
 # Atenção
-- Como atividade não envolve processo de verificação do código em execução, a resposta será postada a seguir.
+- Como a atividade envolve apenas uma perspectiva de refatoração, segue código para análise:
 
 ```php
 <?php
@@ -42,6 +42,14 @@ class UserClass
 
 ```
 
-1. Nome da classe alterado para UserClass. Achei incoerente o nome da classe ser MyUserClass e realizar uma consulta para listar todos usuários da base. 
-2. Criação de um construtor para verificar e criar a instância de conexão. Assim eu criar o objeto pela primeira vez haverá uma única conexão com banco.
-3. A ordenação dos dados é feira duranto a consulta no banco dispensando o uso do sort();
+1. Nome da classe alterado para UserClass. Achei incoerente o nome da classe ser MyUserClass e realizar uma consulta para listar todos usuários da base. Seria mais prudente uma classe geral de usuários listar todos. 
+2. Criação de um construtor para verificar e criar a instância de conexão. Assim ao criar o objeto pela primeira vez haverá uma única conexão com banco. Evitando novas conexões a cada momento que usar a classe.
+3. A ordenação dos dados é feira duranto a consulta no banco dispensando o uso do sort().
+
+# Execução
+
+Caso queria executar o programa:
+1. Copie o diretório "atividade-3" em seu servidor configurado para rodar arquivos PHP.
+2. Configure o acesso do arquivo "index.php" em seu servidor.
+2. Execute o arquivo "index.php" em seu navegador.
+3. Qualquer dúvida envie e-email para robson.kerner@outlook.com

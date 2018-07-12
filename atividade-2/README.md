@@ -14,9 +14,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 }
 
 ```
-
 # Atenção
-- Como atividade não envolve processo de validação da condição o código será postado aqui para verificação
+- Como a atividade envolve apenas uma perspectiva de refatoração, segue código para análise:
 
 ```php
 <?php
@@ -28,3 +27,11 @@ if (@$_SESSION['loggedin'] == true || @$_COOKIE['Loggedin'] == true) {
 }
 
 ```
+
+# Execução
+
+Caso queria executar o programa:
+1. Copie o diretório "atividade-2" em seu servidor configurado para rodar arquivos PHP.
+2. Configure o acesso do arquivo "index.php" em seu servidor.
+2. Execute o arquivo "index.php" em seu navegador.
+3. Qualquer dúvida envie e-email para robson.kerner@outlook.com

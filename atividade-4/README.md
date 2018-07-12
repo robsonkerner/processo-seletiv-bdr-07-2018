@@ -12,8 +12,15 @@ Avaliação de conhecimento para processo seletivo - Analista Desenvolvedor PHP
 - Interface com drag and drop;
 - Interface responsiva (desktop e mobile);
 
+Este projetos possui 2 aplicações distintas:
+- app
+- api
+
+# Execução
+
 1. Copie o diretório "atividade-4" em seu servidor.
 2. Importe o arquivo "api\atividade4.sql" em seu MySQL
 3. Configure o acesso ao banco de dados (host, username, password) no arquivo api\Api\db\DatabaseConnection.php
 4. Configure o ServerName da api no servidor web com mesmo nome para urlApiBase em app\js\script.js:7
 5. Execute o arquivo "app\index.php" em seu navegador.
+6. Qualquer dúvida envie e-email para robson.kerner@outlook.com

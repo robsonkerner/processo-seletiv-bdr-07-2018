@@ -3,11 +3,8 @@ Avaliação de conhecimento para processo seletivo - Analista Desenvolvedor PHP
 
 # Escreva um programa que imprima números de 1 a 100. Mas, para múltiplos de 3 imprima “Fizz” em vez do número e para múltiplos de 5 imprima “Buzz”. Para números múltiplos de ambos (3 e 5), imprima “FizzBuzz”.
 
-1. Copie o diretório "atividade-1" em seu servidor.
-2. Execute o arquivo "index.php" em seu navegador.
-
 # Atenção
-- Como atividade não envolve processo de execução do código, a resposta será postada a seguir:
+- Como a atividade envolve apenas uma perspectiva de elaboração de programa, segue código para análise:
 
 ```php
 <?php
@@ -28,3 +25,11 @@ for ($i = 1; $i <= 100; $i++) {
 }
 
 ```
+
+# Execução
+
+Caso queria executar o programa:
+1. Copie o diretório "atividade-1" em seu servidor configurado para rodar arquivos PHP.
+2. Configure o acesso do arquivo "index.php" em seu servidor.
+2. Execute o arquivo "index.php" em seu navegador.
+3. Qualquer dúvida envie e-email para robson.kerner@outlook.com
