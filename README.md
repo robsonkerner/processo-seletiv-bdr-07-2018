@@ -13,8 +13,6 @@ Avaliação de conhecimento para processo seletivo - Analista Desenvolvedor PHP
 
 ## 1. Escreva um programa que imprima números de 1 a 100. Mas, para múltiplos de 3 imprima “Fizz” em vez do número e para múltiplos de 5 imprima “Buzz”. Para números múltiplos de ambos (3 e 5), imprima “FizzBuzz”.
 
-1. Copie o diretório "atividade-1" em seu servidor.
-2. Execute o arquivo "index.php" em seu navegador.
 
 ## 2. Refatore o código abaixo, fazendo as alterações que julgar necessário.
 
@@ -28,8 +26,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     exit();
 }
 ```
-1. Copie o diretório "atividade-2" em seu servidor.
-2. Execute o arquivo "index.php" em seu navegador.
 
 ## 3. Refatore o código abaixo, fazendo as alterações que julgar necessário.
 ```php
@@ -45,8 +41,6 @@ class MyUserClass
     }
 }
 ```
-1. Copie o diretório "atividade-3" em seu servidor.
-2. Execute o arquivo "index.php" em seu navegador.
 
 ## 4. Desenvolva uma API Rest para um sistema gerenciador de tarefas (inclusão/alteração/exclusão). As tarefas consistem em título e descrição, ordenadas por prioridade.
 
