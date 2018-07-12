@@ -11,12 +11,12 @@ Avaliação de conhecimento para processo seletivo - Analista Desenvolvedor PHP
 
 # Atividades:
 
-1. Escreva um programa que imprima números de 1 a 100. Mas, para múltiplos de 3 imprima “Fizz” em vez do número e para múltiplos de 5 imprima “Buzz”. Para números múltiplos de ambos (3 e 5), imprima “FizzBuzz”.
+## 1. Escreva um programa que imprima números de 1 a 100. Mas, para múltiplos de 3 imprima “Fizz” em vez do número e para múltiplos de 5 imprima “Buzz”. Para números múltiplos de ambos (3 e 5), imprima “FizzBuzz”.
 
-1. Copie o diretório "atividade-1" em seu servidor devidamente configurado com PHP.
+1. Copie o diretório "atividade-1" em seu servidor.
 2. Execute o arquivo "index.php" em seu navegador.
 
-2. Refatore o código abaixo, fazendo as alterações que julgar necessário.
+## 2. Refatore o código abaixo, fazendo as alterações que julgar necessário.
 
 ```php
 <?
@@ -28,7 +28,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     exit();
 }
 ```
-1. Copie o diretório "atividade-2" em seu servidor devidamente configurado com PHP.
+1. Copie o diretório "atividade-2" em seu servidor.
 2. Execute o arquivo "index.php" em seu navegador.
 
 ## 3. Refatore o código abaixo, fazendo as alterações que julgar necessário.
@@ -45,5 +45,21 @@ class MyUserClass
     }
 }
 ```
-1. Copie o diretório "atividade-3" em seu servidor devidamente configurado com PHP.
+1. Copie o diretório "atividade-3" em seu servidor.
 2. Execute o arquivo "index.php" em seu navegador.
+
+## 4. Desenvolva uma API Rest para um sistema gerenciador de tarefas (inclusão/alteração/exclusão). As tarefas consistem em título e descrição, ordenadas por prioridade.
+
+**Desenvolver utilizando:**
+- Linguagem PHP (ou framework CakePHP);
+- Banco de dados MySQL;
+
+**Diferenciais:**
+- Criação de interface para visualização da lista de tarefas;
+- Interface com drag and drop;
+- Interface responsiva (desktop e mobile);
+
+1. Copie o diretório "atividade-4" em seu servidor.
+2. Importe o arquivo "atividade-4-db.sql" em seu MySQL
+3. Configure o acesso ao banco de dados (host, username, password) no arquivo app/Config/database.php 
+4. Execute o arquivo "index.php" em seu navegador.
