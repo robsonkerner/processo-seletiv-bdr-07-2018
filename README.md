@@ -60,8 +60,8 @@ Confira (https://github.com/robsonkerner/processo-seletivo-bdr-07-2018/tree/mast
 - Interface responsiva (desktop e mobile);
 
 1. Copie o diretório "atividade-4" em seu servidor.
-2. Importe o arquivo "atividade-4-db.sql" em seu MySQL
-3. Configure o acesso ao banco de dados (host, username, password) no arquivo app/Config/database.php 
-4. Execute o arquivo "index.php" em seu navegador.
+2. Importe o arquivo "api\atividade4.sql" em seu MySQL
+3. Configure o acesso ao banco de dados (host, username, password) no arquivo api\Api\db\DatabaseConnection.php 
+4. Execute o arquivo "app\index.php" em seu navegador.
 
 Confira (https://github.com/robsonkerner/processo-seletivo-bdr-07-2018/tree/master/atividade-4)

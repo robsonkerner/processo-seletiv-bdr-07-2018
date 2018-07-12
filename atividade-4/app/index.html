@@ -1,0 +1,64 @@
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Atividade 4</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    
+	    <script src="js/jquery/jquery.min.js"></script>
+		<link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="js/bootstrap/css/bootstrap-theme.min.css">
+		<script src="js/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/angular/angular.min.js"></script>
+	</head>
+
+	<body>
+		
+		<div class="container" ng-controller='TarefaController'>
+			<h1 class='text-center'>Atividade 4 - API REST</h1>
+			<button type="button" ng-click='carregarTarefa();' class='btn btn-primary'>Carregar tarefas</button>
+			<button type="button" ng-if='!tarefa.show' ng-click='novaTarefa();' class='btn btn-success'>Adicionar tarefa</button>
+			<br/><br/>
+			<div class='row'>
+				<div class='col-sm-12 col-md-6 col-lg-3' ng-show='tarefa.show'>
+					<div class='panel panel-default'>
+						<div class='panel-body'>
+							<input type='text' class='form-control' ng-model='tarefa.titulo' placeholder='título' maxlength="20" />
+							<input type='text' class='form-control' ng-model='tarefa.descricao' placeholder='descriçao' maxlength="200" />
+							<select class='form-control' ng-model='tarefa.prioridade'>
+								<option value='1'>1 (FAZER QUANDO DER)</option>
+								<option value='2'>2 (AINDA NÃO ESTÁ INCOMODANDO)</option>
+								<option value='3'>3 (ALGUMAS PESSOAS JÁ ESTÃO PEDINDO)</option>
+								<option value='4'>4 (ESTAMOS PERDENDO DINHEIRO)</option>
+								<option value='5'>5 (É AGORA OU NUNCA)</option>
+							</select>
+						</div>
+						<div class='panel-footer'>
+							<button type="button" ng-click='salvarTarefa();' class='btn btn-success'>Salvar</button>
+							<button type="button" ng-click='fecharTarefa();' class='btn btn-danger'>Fechar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br/><br/>
+			<div class='row'>
+				<div class="col-sm-12 col-md-6 col-lg-3" ng-repeat='tar in tarefas'>
+					<div class='panel panel-default'>
+						<div class='panel-body'>
+							Título:{{tar.titulo}}<br />
+							Descrição:{{tar.descricao}}<br />
+							Prioridade:{{tar.prioridade}}<br />
+						</div>
+						<div class='panel-footer'>
+							<button type="button" ng-click='editarTarefa($index);' class='btn btn-primary'>Editar</button>
+							<button type="button" ng-click='excluirTarefa($index);' class='btn btn-danger'>Excluir</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
